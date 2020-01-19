@@ -19,7 +19,7 @@ public class Ex7 {
             }
             int size = lines.size();
             if (size>0){
-                readFromFile(size);
+                writeInFile(size);
             }
             else{
                 System.out.println("Файл пуст");
@@ -29,7 +29,7 @@ public class Ex7 {
             System.out.println("Файла не существует");
         }
     }
-    public static void readFromFile(int size){
+    public static void writeInFile(int size){
         try(FileWriter writer = new FileWriter("text.txt")) {
             Scanner scanner = new Scanner(System.in);
             String text;
